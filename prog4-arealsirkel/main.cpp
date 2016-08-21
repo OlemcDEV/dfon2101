@@ -6,29 +6,29 @@ const double dPi = 3.14;
 double dRadius = 0;
 
 void areal1 () {
-    std::cout
+    cout
         << (dPi * dRadius * dRadius)
-        << std::endl;
+        << endl;
 }
 
 void areal2 () {
     const double lokalPi = 3.14159;
-    std::cout
+    cout
         << (lokalPi * dRadius * dRadius)
-        << std::endl;
+        << endl;
 }
 
 void textline1 (string input) {
-    std::cout
+    cout
         << input
-        << std::endl;
+        << endl;
 }
 
 //void scanner1 () - Lyst til å lage en funksjon for std::cin L31,32
 
 int main() {
     textline1("Tast inn radius på sirkel: ");
-    std::cin
+    cin
         >> dRadius;
     textline1("Areal regnet ut med metode areal1 er: ");
     areal1();
