@@ -7,6 +7,8 @@
 *.userosscache
 *.sln.docstates
 
+porg3-sizeof()
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
