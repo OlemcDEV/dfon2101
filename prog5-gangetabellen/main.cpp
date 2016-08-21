@@ -10,7 +10,7 @@ int main() {
         }
         cout
             <<
-            std::endl;
+            endl;
     }
     system("pause");
 }
