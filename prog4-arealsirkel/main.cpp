@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string>
+using namespace std;
 
 const double dPi = 3.14;
 double dRadius = 0;
@@ -16,19 +18,21 @@ void areal2 () {
         << std::endl;
 }
 
-int main() {
+void textline1 (string input) {
     std::cout
-        << "Tast inn radius på sirkel: "
+        << input
         << std::endl;
+}
+
+//void scanner1 () - Lyst til å lage en funksjon for std::cin L31,32
+
+int main() {
+    textline1("Tast inn radius på sirkel: ");
     std::cin
         >> dRadius;
-    std::cout
-        << "Areal regnet ut med metode areal1 er: "
-        << std::endl;
+    textline1("Areal regnet ut med metode areal1 er: ");
     areal1();
-    std::cout
-        << "Areal regnet ut med metode areal2 er: "
-        << std::endl;
+    textline1("Areal regnet ut med metode areal2 er: ");
     areal2();
     system("pause");
 }
