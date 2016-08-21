@@ -1,6 +1,6 @@
 #include <iostream>
 
-double dPi = 3.14;
+const double dPi = 3.14;
 double dRadius = 0;
 
 void areal1 () {
@@ -10,7 +10,7 @@ void areal1 () {
 }
 
 void areal2 () {
-    double lokalPi = 3.14159;
+    const double lokalPi = 3.14159;
     std::cout
         << (lokalPi * dRadius * dRadius)
         << std::endl;
