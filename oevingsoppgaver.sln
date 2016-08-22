@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prog4-arealsirkel", "prog4-
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prog5-gangetabellen", "prog5-gangetabellen\prog5-gangetabellen.vcxproj", "{DC50260D-F8C4-4E95-8605-DE6494FE76B8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prog6-struct", "prog6-struct\prog6-struct.vcxproj", "{D0852E48-1BC3-4C8F-92CF-6FC6ECA5A97A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{DC50260D-F8C4-4E95-8605-DE6494FE76B8}.Release|x64.Build.0 = Release|x64
 		{DC50260D-F8C4-4E95-8605-DE6494FE76B8}.Release|x86.ActiveCfg = Release|Win32
 		{DC50260D-F8C4-4E95-8605-DE6494FE76B8}.Release|x86.Build.0 = Release|Win32
+		{D0852E48-1BC3-4C8F-92CF-6FC6ECA5A97A}.Debug|x64.ActiveCfg = Debug|x64
+		{D0852E48-1BC3-4C8F-92CF-6FC6ECA5A97A}.Debug|x64.Build.0 = Debug|x64
+		{D0852E48-1BC3-4C8F-92CF-6FC6ECA5A97A}.Debug|x86.ActiveCfg = Debug|Win32
+		{D0852E48-1BC3-4C8F-92CF-6FC6ECA5A97A}.Debug|x86.Build.0 = Debug|Win32
+		{D0852E48-1BC3-4C8F-92CF-6FC6ECA5A97A}.Release|x64.ActiveCfg = Release|x64
+		{D0852E48-1BC3-4C8F-92CF-6FC6ECA5A97A}.Release|x64.Build.0 = Release|x64
+		{D0852E48-1BC3-4C8F-92CF-6FC6ECA5A97A}.Release|x86.ActiveCfg = Release|Win32
+		{D0852E48-1BC3-4C8F-92CF-6FC6ECA5A97A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
