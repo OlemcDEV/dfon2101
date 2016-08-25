@@ -1,7 +1,6 @@
 #include <iostream>
-using namespace std;
 
-struct menneske {
+struct human {
 	char gender;
 	int age;
 	float height;
@@ -10,31 +9,63 @@ struct menneske {
 person;
 
 int main() {
-
+    //Namecheck
 	do
 	{
-        cout
-            << "Hello human, what is your gender? Type m or f"
-            << endl;
-		cin
+        std::cout
+            << "Hello human, what is your gender? Type m/M or f/F"
+            << std::endl;
+		std::cin
 			>>  
             person.gender;
-    } while (person.gender != 'm'&&'M'&&'f'&&'F');
-	cout
+    } while (((person.gender) != 'm') && (person.gender != 'f') 
+        && (person.gender != 'M') && (person.gender != 'F'));
+	std::cout
 		<< person.gender
-		<< endl;
+		<< std::endl;
 
+    //Agecheck
     do
     {
-        cout
+        std::cin.clear();
+        std::cout
             << "What is your age?"
-            << endl;
-        cin
+            << std::endl;
+        std::cin.ignore()
             >>
             person.age;
-    } while (person.age = NULL);
-    cout
+        if (person.age < 0) {
+            std::cout
+                << "You're not fucking negative years old"
+                << std::endl;
+        }
+        if (person.age >= 100) {
+            std::cout
+                << "You're very old..."
+                << std::endl;
+        }
+    } while (std::cin.fail() || person.age <=0);
+    std::cout
         << person.age
-        << endl;
+        << std::endl;
+
+    //Height check
+    do
+    {
+        std::cin.clear();
+        std::cout
+            << "What is your height? F.example: 1.75"
+            << std::endl;
+        std::cin.ignore()
+            >>
+            person.height;
+        if (!(std::cin >> person.height)) {
+            std::cout
+                << "You have to use float number, integer and other datatypes are "
+                << "not valid."
+                << std::endl;
+                
+        }
+    } while (!(std::cin >> person.height));
     system("pause");
 }
