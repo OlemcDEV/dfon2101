@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+
 void sumOf2 () {
     double dNumber1;
     double dNumber2;
@@ -23,7 +24,7 @@ void sumOf2 () {
 
 }
 char op;
-int position;
+double position;
 int opCount;
 double dNumber1;
 double dNumber2;
@@ -31,7 +32,9 @@ double dNumber2;
 void findOpCount(char array[]) {
     char x = 0;
     opCount;
-    for (int i = 0; i < sizeof(array); i++) {
+    op;
+    position;
+    for (int i = 0; i < strlen(array); i++) {
         x = array[i];
         switch (x) {
         case '+': opCount++;
@@ -50,6 +53,7 @@ void findOpCount(char array[]) {
         << std::endl;
 }
 void findOpAndSplitAndDoTheMath(char array[]) {
+    position;
     switch (opCount) {
     case 0:
         std::cout
@@ -57,19 +61,28 @@ void findOpAndSplitAndDoTheMath(char array[]) {
             << std::endl;
         break;
     case 1:
-        //Finne posisjonen til operatoren
-        for (int i = 0; i <= sizeof(array[i]); i++) {
-            if (array[i] = '+' || '-' || '*' || '/') {
-                position = i;
-                for (int j = 0; j < sizeof(array[j]); j++) {
-                    position = i;
-                }
-                std::cout
-                    //<< dNumber1
-                    << std::endl;
+        //Finner index til operatoren
+        for (int j = 0; j < strlen(array); j++) {
+            char x = array[j];
+            switch (x) {
+            case '+':
+                position = j;
+                break;
+            case '-':
+                position = j;
+                break;
+            case '*':
+                position = j;
+                break;
+            case '/':
+                position = j;
+                break;
             }
         }
-
+        std::cout
+            << "Index of op: "
+            << position
+            << std::endl;
         break;
     case 2:
         break;
@@ -78,7 +91,7 @@ void findOpAndSplitAndDoTheMath(char array[]) {
             << "ERROR 001: For a calc a(+,-,*,/)b, "
             "it can't be more than 2 operators";
         break;
-    }
+        }
 }
 
 void sumOf2_withOperator() {
@@ -104,7 +117,6 @@ void sumOf2_withOperator() {
 }
 
 int main() {
-
     //DEL 1
     //sumOf2();
 
