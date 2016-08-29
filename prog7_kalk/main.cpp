@@ -34,7 +34,7 @@ int factorialForLoop(int n) {
     return n;
 }
 
-int factorialRecursive (int n) {
+long int factorialRecursive (int n) {
 
     return (n == 1 || n == 0) ? 1 : factorialRecursive(n - 1) * n;
 }
@@ -66,6 +66,7 @@ void calc() {
     double answer;
     
     std::cout
+        << std::endl
         << "For simple math: 3.12+2.12 or -3.12-2.12 Operators: +,-,*,/"
         << std::endl
         << "For factorial: n!"
@@ -92,7 +93,7 @@ void calc() {
             << std::endl;
     }
 
-    if (op == '#') {
+    else if (op == '#') {
         std::cout
             << std::endl;
             factorizing((int)dNumber1);
@@ -127,11 +128,12 @@ void calc() {
 }
 
 int main() {
+
     //DEL 1
     //sumOf2();
 
     //DEL 2,3,4,5,6 og 7
-    calc();
-
-    system("pause");
+    do {
+        calc();
+    } while (true);
 }
