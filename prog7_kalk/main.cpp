@@ -1,7 +1,4 @@
 #include <iostream>
-#include <stdlib.h>
-#include <string>
-
 void sumOf2 () {
 
     double dNumber1;
